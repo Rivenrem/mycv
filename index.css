@@ -84,7 +84,8 @@ body {
 }
 
 .header__contacts-icon:hover {
-  width: 3.5rem;
+  scale: 1.2;
+  transition: scale 0.1s ease-in-out;
 }
 
 .content {
@@ -188,6 +189,13 @@ body {
   padding: 0;
 }
 
+.capabilities__hobbies li:hover,
+.capabilities__skills li:hover {
+  background-color: var(--background-color);
+  scale: 1.2;
+  transition: scale 0.1s ease-in-out;
+}
+
 .capabilities__hobbies li,
 .capabilities__skills li {
   padding: 0.5rem;
@@ -221,7 +229,9 @@ body {
   grid-template-areas:
     "a d e"
     "a c e"
-    "b b f";
+    "b b f"
+    "i i i"
+    "g h h";
   grid-gap: 1rem;
 }
 
@@ -259,6 +269,18 @@ body {
   grid-area: f;
 }
 
+.cats-gallery__cat--7 {
+  grid-area: g;
+}
+
+.cats-gallery__cat--8 {
+  grid-area: h;
+}
+
+.cats-gallery__cat--9 {
+  grid-area: i;
+}
+
 @media (max-width: 50rem) {
   .header__burger-menu {
     display: block;
@@ -294,6 +316,8 @@ body {
       "a d"
       "a c"
       "e b"
-      "e f";
+      "e f"
+      "g g"
+      "h i";
   }
 }
