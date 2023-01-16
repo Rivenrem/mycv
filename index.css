@@ -210,12 +210,22 @@ body {
   margin-right: 0.5rem;
 }
 
-.pet-project {
-  text-align: center;
+.block {
   background-color: var(--main-green-color);
-  padding: 1rem;
   margin: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
+  text-align: center;
+}
+
+.education img {
+  margin: 1rem;
+  width: 90%;
+}
+
+.education p::before {
+  content: "📌";
+  margin-right: 0.5rem;
 }
 
 .pet-project__link a {
