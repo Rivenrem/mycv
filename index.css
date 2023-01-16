@@ -230,8 +230,8 @@ body {
     "a d e"
     "a c e"
     "b b f"
-    "i i i"
-    "g h h";
+    "h h g"
+    "i i g";
   grid-gap: 1rem;
 }
 
@@ -241,8 +241,8 @@ body {
 
 .cats-gallery img {
   width: 100%;
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
 }
 
 .cats-gallery__cat--1 {
@@ -317,7 +317,7 @@ body {
       "a c"
       "e b"
       "e f"
-      "g g"
-      "h i";
+      "h h"
+      "g i";
   }
 }
