@@ -1,5 +1,5 @@
 let offset = 0;
-const sliderLine = document.querySelector(".slider__content-line");
+const sliderLine = document.querySelector(".slider__content__line");
 
 document.querySelector(".slider__next").addEventListener("click", () => {
   offset += 240;

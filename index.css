@@ -77,13 +77,13 @@ body {
   display: flex;
 }
 
-.header__contacts-icon {
+.header__contacts__icon {
   width: 3rem;
   padding: 1rem;
   transition: width 0.3s ease-in;
 }
 
-.header__contacts-icon:hover {
+.header__contacts__icon:hover {
   scale: 1.2;
   transition: scale 0.1s ease-in-out;
 }
@@ -117,7 +117,7 @@ body {
   overflow: hidden;
 }
 
-.slider__content-line {
+.slider__content__line {
   position: relative;
   left: 0;
   display: flex;
@@ -162,14 +162,14 @@ body {
   padding: 0;
 }
 
-.about-me__list-item {
+.about-me__list__item {
   background-color: var(--main-green-color);
   border-radius: 2rem;
   margin: 1rem 0;
   padding: 1rem;
 }
 
-.about-me__list-item::before {
+.about-me__list__item::before {
   content: "📌";
   display: inline-block;
   margin-right: 0.2rem;
@@ -183,8 +183,8 @@ body {
   justify-content: space-around;
 }
 
-.capabilities__hobbies-list,
-.capabilities__skills-list {
+.capabilities__hobbies__list,
+.capabilities__skills__list {
   list-style: none;
   padding: 0;
 }
