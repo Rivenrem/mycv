@@ -1,7 +1,11 @@
 @import "./src/cssVariables/variables.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin-top: 0;
+  margin: 0;
   font-family: "Lucida Sans";
   font-size: large;
   background-color: var(--background-color);
@@ -26,7 +30,6 @@ body {
 
 .header__logo {
   width: 4.5rem;
-  padding: 1rem;
 }
 
 .header__burger-menu {
@@ -78,14 +81,13 @@ body {
 }
 
 .header__contacts__icon {
-  width: 3rem;
-  padding: 1rem;
-  transition: width 0.3s ease-in;
+  width: 2.7rem;
+  margin-right: 1rem;
+  transition: scale 0.1s ease-in-out;
 }
 
 .header__contacts__icon:hover {
   scale: 1.2;
-  transition: scale 0.1s ease-in-out;
 }
 
 .content {
@@ -93,8 +95,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 85%;
+  width: 90%;
   max-width: 75rem;
+  padding: 2rem;
   background-color: var(--white);
 }
 
@@ -102,8 +105,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 85%;
-  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .slider {
@@ -153,7 +155,7 @@ body {
 
 .about-me {
   width: 85%;
-  padding: 2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -177,8 +179,8 @@ body {
 
 .capabilities {
   font-weight: bold;
-  width: 85%;
-  padding: 2rem;
+  margin-top: 2rem;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -192,7 +194,7 @@ body {
 .capabilities__hobbies li:hover,
 .capabilities__skills li:hover {
   background-color: var(--background-color);
-  scale: 1.2;
+  scale: 1.05;
   transition: scale 0.1s ease-in-out;
 }
 
@@ -212,7 +214,7 @@ body {
 
 .block {
   background-color: var(--main-green-color);
-  margin: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   border-radius: 2rem;
   text-align: center;
@@ -233,64 +235,6 @@ body {
   cursor: pointer;
 }
 
-.cats-gallery {
-  display: grid;
-  margin: 1rem;
-  grid-template-areas:
-    "a d e"
-    "a c e"
-    "b b f"
-    "h h g"
-    "i i g";
-  grid-gap: 1rem;
-}
-
-.body-text {
-  text-align: center;
-}
-
-.cats-gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cats-gallery__cat--1 {
-  grid-area: a;
-}
-
-.cats-gallery__cat--2 {
-  grid-area: b;
-}
-
-.cats-gallery__cat--3 {
-  grid-area: c;
-}
-
-.cats-gallery__cat--4 {
-  grid-area: d;
-}
-
-.cats-gallery__cat--5 {
-  grid-area: e;
-}
-
-.cats-gallery__cat--6 {
-  grid-area: f;
-}
-
-.cats-gallery__cat--7 {
-  grid-area: g;
-}
-
-.cats-gallery__cat--8 {
-  grid-area: h;
-}
-
-.cats-gallery__cat--9 {
-  grid-area: i;
-}
-
 @media (max-width: 50rem) {
   .header__burger-menu {
     display: block;
@@ -307,6 +251,9 @@ body {
     padding-top: 9rem;
     background-color: var(--main-green-color);
     transition: transform 0.5s;
+  }
+  .header__contacts__icon {
+    padding: 0 0 1rem;
   }
 
   .header.open-meny .header__contacts {
